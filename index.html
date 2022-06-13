@@ -2,73 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osf digital</title>
+    <title>OSF Academy</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-    <main>
-        <div class="navbar">
-            <div class="dropdown">
-              <button class="dropbtn">SERVICES
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <div class="header">
-                  <h2>CATEGORIES</h2>
-                </div>
-                <div class="row">
-                  <div class="column">
-                    <h3>PRODUCT CATEGORIES</h3>
-                    <a href="#">Accessories</a>
-                    <a href="#">Alcohol</a>
-                    <a href="#">Art</a>
-                    <a href="#">Books</a>
-                    <a href="#">Drink</a>
-                    <a href="#">Electronics</a>
-                    <a href="#">Flowers & Plants</a>
-                    <a href="#">Food</a>
-                  </div>
-                  <div class="column">
-                    <a href="#">Gadgets</a>
-                    <a href="#">Garden</a>
-                    <a href="#">Grocery</a>
-                    <a href="#">Home</a>
-                    <a href="#">Jewelry</a>
-                    <a href="#">Kids & Baby</a>
-                    <a href="#">Men's fashion/a>
-                    <a href="#">Mobile</a>
-                  </div>
-                  <div class="column">
-                    <a href="#">Motorcycles</a>
-                    <a href="#">Movies</a>
-                    <a href="#">Music</a>
-                    <a href="#">Office</a>
-                    <a href="#">Pets</a>
-                    <a href="#">Romantic</a>
-                    <a href="#">Sport</a>
-                    <a href="#">Toys</a>
-                  </div>
-                  <div class="column">
-                    <h3>SALE</h3>
-                    <a href="#">Accessories</a>
-                    <a href="#">Alcohol</a>
-                    <a href="#">Art</a>
-                    <a href="#">Books</a>
-                    <a href="#">Drink</a>
-                    <a href="#">Electronics</a>
-                    <a href="#">Flowers & Plants</a>
-                    <a href="#">Food</a>
-                  </div>
-                </div>
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#"><img src="photos/osf.png" alt="osf logo"></a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="#">COMPANY</a></li>
+        <li><a href="#">LIBRARY</a></li>
+        <li><a href="#">CONTACT US</a></li>
+          </ul>
+        <li>
+          <a href="#" class="desktop-item">SERVICES</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">SERVICES</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <header>PRODUCT CATEGORIES</header>
+                <ul class="mega-links">
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Alcohol</a></li>
+                  <li><a href="#">Art</a></li>
+                  <li><a href="#">Books</a></li>
+                  <li><a href="#">Drink</a></li>
+                  <li><a href="#">Electronics</a></li>
+                  <li><a href="#">Flowers & Plants</a></li>
+                  <li><a href="#">Food</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <ul class="mega-links">
+                    <li><a href="#">Gadgets</a></li>
+                    <li><a href="#">Garden</a></li>
+                    <li><a href="#">Grocery</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Jewelry</a></li>
+                    <li><a href="#">Kids & Baby</a></li>
+                    <li><a href="#">Men's Fashion</a></li>
+                    <li><a href="#">Mobile</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <ul class="mega-links">
+                    <li><a href="#">Motorcycles</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Office</a></li>
+                    <li><a href="#">Pets</a></li>
+                    <li><a href="#">Romantic</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Toys</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>PRODUCT CATEGORIES</header>
+                <ul class="mega-links">
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Alcohol</a></li>
+                  <li><a href="#">Art</a></li>
+                  <li><a href="#">Books</a></li>
+                  <li><a href="#">Drink</a></li>
+                  <li><a href="#">Electronics</a></li>
+                  <li><a href="#">Flowers & Plants</a></li>
+                  <li><a href="#">Food</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <img src="Photos/23.jpg" alt="OSF">
               </div>
             </div>
-            <a href="#home">COMPANY</a>
-            <a href="#news">LIBRARY</a>
-            <a href="#home">CONTACT US</a>
           </div>
-    </main>
-</body>
+        </li>
 
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+</body>
 </html>
