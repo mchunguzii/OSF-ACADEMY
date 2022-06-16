@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 
-}
 *{
   margin: 0;
   padding: 0;
@@ -50,13 +45,15 @@ nav .wrapper{
   font-size: 14px;
   font-weight: 500;
   padding: 9px 15px;
-  border-radius: 5px;
   transition: all 0.3s ease;
 }
 .nav-links li a:hover{
   background: #222831;
   color:#FFFFFF;
+  border-bottom: 3px solid #5FD068; 
+  padding-bottom: 22px;
 }
+
 .nav-links .mobile-item{
   display: none;
 }
@@ -286,4 +283,11 @@ nav input{
 }
 .logo img {
     height: 45px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
