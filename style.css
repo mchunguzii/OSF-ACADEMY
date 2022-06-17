@@ -7,7 +7,7 @@
   font-family: 'Poppins', sans-serif;
 }
 .logo{
-    padding-top: 45px;
+    padding-top: 0;
 }
 nav{
   position: fixed;
@@ -51,7 +51,7 @@ nav .wrapper{
   background: #222831;
   color:#FFFFFF;
   border-bottom: 3px solid #5FD068; 
-  padding-bottom: 22px;
+  padding-bottom: 30px;
 }
 
 .nav-links .mobile-item{
@@ -123,7 +123,7 @@ nav .wrapper{
   padding: 0px;
   padding: 0 20px;
   color: #d9d9d9;
-  font-size: 17px;
+  font-size: 13px;
   display: block;
 }
 .row .mega-links li a:hover{
@@ -290,4 +290,9 @@ nav input{
   bottom: 0;
   width: 100%;
   text-align: center;
+  font-size: 12px;
+}
+.col ul li a{
+  text-decoration: none;
+  list-style: none;
 }
