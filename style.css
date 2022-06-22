@@ -342,12 +342,9 @@ nav input{
   width: 100%;
   font-size: 12px;
 }
-.slider{
-width: 1100px;
-}
 .slides{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
 }
 .sales{
   display: grid;
@@ -375,4 +372,90 @@ width: 1100px;
 }
 .line-2{
   display: block;
+}
+
+.back {
+  width: 120px;
+  height: 37px;
+  border: 2px solid #3a5b96;
+  background-color: #ffffff;
+  border-radius: 25px;
+  color: #3a5b96;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing:normal;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+/* Style for "f" */
+.f {
+  width: 9px;
+  height: 18px;
+  background-color: #ffffff;
+  padding: 0px;
+  float: left;
+}
+.follow {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.position1 {
+  width: 559px;
+  height: 92px;
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+.position1 {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.position2 {
+  width: 336px;
+  height: 31px;
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+
+.position2 {
+  font-family: Lato;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.position2 {
+  font-family: "Myriad Pro - Regular";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.view-more{
+  border-radius: 25px;
+  background-color: inherit;
+  color: white;
+  font-size: 12px;
+  width: 120px;
+  height: 30px;
+  border-color: #FFFFFF;
 }
