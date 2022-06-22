@@ -8,6 +8,58 @@
 }
 .logo{
     padding-top: 0;
+    position:relative;
+    display:inline-block;
+    width:50px;
+    top:8px;
+    float: inline-start;
+}
+.osf {
+  width: 73px;
+  height: 25px;
+  color: #011847;
+  font-family: "Lato - Extra Bold";
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  text-transform: uppercase;
+  position:absolute;
+  top:0px;
+  font-weight: bold;
+  padding: 10px;
+}
+/* Text style for "O, SF" */
+.o-sf {
+  font-style: normal;
+  letter-spacing: 6.33px;
+  line-height: normal;
+}
+/* Style for "Academy" */
+.academy {
+  width: 74px;
+  height: 17px;
+  color: #84bc22;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  position:absolute;
+  top: 20px;
+  padding: 20px;
+  float: left;
+  left: 35px;
+}
+/* Text style for "Academy" */
+.academy {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
 }
 nav{
   position: fixed;
@@ -278,74 +330,49 @@ nav input{
   font-size: 45px;
   font-weight: 600;
 }
-.osf img{
-    height: 45px;
+.osf1 img{
+    height:max-content;
 }
 .logo img {
     height: 45px;
 }
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   font-size: 12px;
 }
-.col ul li a{
-  text-decoration: none;
-  list-style: none;
+.slider{
+width: 1100px;
 }
-.slider-container{
-  width: 100%;
+.slides{
   display: grid;
-  grid-template-columns: 3fr 1fr;
-}
-.carousel {
-  position: relative;
-  padding: 40px 15px;
-  height: 100%;
-}
-
-.carousel__item {
-  height: 300px;
-  background: grey;
-  padding: 1em;
-  font-family: "Quicksand", sans-serif;
-  font-weight: bold;
-  font-size: 2em;
-  color: #ffffff;
-  display: none;
-}
-
-.carousel__item--selected {
-  display: block;
-}
-
-.carousel__nav {
-  width: 100%;
-  padding: 20px 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
-
-.carousel__button {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.carousel__button--selected {
-  background: rgba(255, 255, 255, 0.5);
+  grid-template-columns: 2fr 1fr;
 }
 .sales{
-  background-color:#5FD068;
-  padding: 15px 15px;
-  height: 74%;
-  width: 67%;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  padding: 25px;
+  padding-top: 0px;
+  height: 350px;
+  padding: 0 25px;
+}
+.palm{
+  height: 400px;
+  width: 300px;
+}
+.faceb{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 20px;
+  width: 300px;
+}
+.faceB{
+  text-align: center;
+  font-size: 12px;
+  width: 300px;
+}
+.line-2{
+  display: block;
 }

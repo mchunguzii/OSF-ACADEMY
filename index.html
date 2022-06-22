@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
   <nav>
     <div class="wrapper">
-      <div class="logo"><a href="#"><img src="photos/osf.png" alt="osf logo"></a></div>
+      <div class="logo"><a href="#"><img src="photos/osf.png" alt="osf logo"></a><span class="osf">OSF</span>
+        <span class="academy">Academy</span></div>
       <input type="radio" name="slider" id="menu-btn">
       <input type="radio" name="slider" id="close-btn">
       <ul class="nav-links">
@@ -75,7 +76,7 @@
                 </ul>
               </div>
               <div class="row">
-                <img src="Photos/23.jpg" alt="osf digital" class="osf">
+                <img src="Photos/23.jpg" alt="osf digital" class="osf1">
               </div>
             </div>
           </div>
@@ -87,15 +88,21 @@
       <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
     </div>
   </nav>
-  <div class="slider-container">
-    <div class="carousel">
-    <div class="carousel__item">Content #1</div>
-    <div class="carousel__item carousel__item--selected">Content #2</div>
-    <div class="carousel__item">Content #3</div>
-    <div class="carousel__item">Content #4</div>
-    <div class="carousel__item">Content #5</div>
-  </div>
-    <div class='sales'> <img src="" alt="sales"></div>
+  <div class="slides">
+    <ul class="slider">
+      <li><img src="Photos/Layer_3.png" alt="osf digital"></li>
+      <li><img src="Photos/Layer_4.png" alt="osf digital"></li>
+      <li><img src="Photos/Layer_5.png" alt="osf digital"></li>
+    </ul>
+    <div class='sales'> 
+      <img src="Photos/lime green.png" alt="sales" class="palm">
+       <div class="">
+        <h1 class="faceb">Follow us on Facebook</h1>
+        <h3 class="faceB"> Sed  ut perspiciatis unde omnis iste <span class="line-2">natus error sit</span></h3>
+       </div>
+      </div>
+    </div>
+    
   </div>
 <div class="footer">
  <div class="container-fluid mt-3">
@@ -175,5 +182,13 @@
   yearSpan.text(year);
 </script>
 <script src="index.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="text/javascript">
+  $('.slider').slick();
+</script>
 </body>
 </html>
