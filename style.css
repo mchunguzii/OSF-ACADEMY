@@ -8,6 +8,7 @@ html{
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 .logo{
     padding-top: 0;
     position:relative;
@@ -431,7 +432,8 @@ nav input{
 .carousel-item {
   width: 1171px;
   height: 506px;
-  padding: 24px;
+  padding: 35px 75px;
+  object-fit: cover;
 }
 /*first slider*/
 .carousel-caption h2{
@@ -634,4 +636,31 @@ nav input{
 }
 .season span{
   display: block;
+}
+.section-products{
+  background-color: #2d343a;
+}
+.header h2{
+  color: white;
+  font-family: "Lato - Extra Bold";
+  padding: 45px 25px 25px;
+}
+.load-more{
+  width: 262px;
+  display:block;
+}
+.load-more span img{
+  height: 17px;
+  width: 17px;
+}
+.hero-image{
+ padding: 40px 0;
+}
+.hero-image img{
+  width: 100%;
+  height: 40%px;
+  object-fit: cover;
+}
+.main-section{
+  background-color: #2d343a;
 }
