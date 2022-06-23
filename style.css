@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
+html{
+  height: 100%;
+}
 *{
   margin: 0;
   padding: 0;
@@ -341,22 +343,28 @@ nav input{
   bottom: 0;
   width: 100%;
   font-size: 12px;
+  min-height: 10vh;
+  margin-left: 25px;
 }
 .slides{
   display: grid;
   grid-template-columns: 3fr 1fr;
+  width: 100vw;
 }
 .sales{
   display: grid;
-  grid-template-rows: 3fr 1fr;
-  padding: 25px;
+  grid-template-rows: 3fr 2fr;
   padding-top: 0px;
   height: 350px;
   padding: 0 25px;
+  width: 10vw;
+}
+.lime{
+  height: 350px;
+  width: 260px;
 }
 .palm{
-  height: 400px;
-  width: 300px;
+  align-content: center;
 }
 .faceb{
   font-family: Arial, Helvetica, sans-serif;
@@ -376,7 +384,7 @@ nav input{
 
 .back {
   width: 120px;
-  height: 37px;
+  height: 24px;
   border: 2px solid #3a5b96;
   background-color: #ffffff;
   border-radius: 25px;
@@ -390,21 +398,43 @@ nav input{
   text-align: center;
   text-transform: uppercase;
   padding-left: 15px;
+  margin-left: 90px;
 }
 /* Style for "f" */
-.f {
+.f{
   width: 9px;
   height: 18px;
   background-color: #ffffff;
-  padding: 0px;
   float: left;
+  margin-bottom: 0;
 }
 .follow {
-  font-style: normal;
+  font-style:normal;
   letter-spacing: normal;
-  line-height: normal;
+  text-decoration:none;
+  font-family:Arial, Helvetica, sans-serif;
 }
-.position1 {
+.view-more{
+  border-radius: 25px;
+  background-color: inherit;
+  color: white;
+  font-size: 12px;
+  width: 120px;
+  height: 30px;
+  border-color: #FFFFFF;
+}
+.carousel-caption{
+  height: 350px;
+  width: 700px;
+}
+
+.carousel-item {
+  width: 1171px;
+  height: 506px;
+  padding: 24px;
+}
+/*first slider*/
+.carousel-caption h2{
   width: 559px;
   height: 92px;
   color: #ffffff;
@@ -415,14 +445,15 @@ nav input{
   letter-spacing: normal;
   line-height: normal;
   text-align: left;
+  margin-bottom: 40px;
 }
-.position1 {
+.carousel-caption h2 {
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
 }
 
-.position2 {
+.carousel-caption p {
   width: 336px;
   height: 31px;
   color: #ffffff;
@@ -433,9 +464,10 @@ nav input{
   letter-spacing: normal;
   line-height: normal;
   text-align: left;
+  margin-bottom: 40px;
 }
 
-.position2 {
+.carousel-caption p {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
@@ -443,19 +475,163 @@ nav input{
   line-height: normal;
 }
 
-.position2 {
+.carousel-caption p {
   font-family: "Myriad Pro - Regular";
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
 }
-.view-more{
-  border-radius: 25px;
+
+.carousel-caption button {
+  width: 147px;
+  height: 37px;
+  border: 2px solid #ffffff;
   background-color: inherit;
   color: white;
-  font-size: 12px;
-  width: 120px;
-  height: 30px;
-  border-color: #FFFFFF;
+  display: block;
+}
+
+/*second slider*/
+
+.carousel-capt h2{
+  width: 559px;
+  height: 92px;
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.carousel-capt h2 {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.carousel-capt p {
+  width: 336px;
+  height: 31px;
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.carousel-capt p {
+  font-family: Lato;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.carousel-capt p {
+  font-family: "Myriad Pro - Regular";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.carousel-capt button {
+  width: 147px;
+  height: 37px;
+  border: 2px solid #ffffff;
+  background-color: inherit;
+  color: white;
+  display: block;
+}
+/*third slider*/
+
+.carousel-caption h2{
+  width: 559px;
+  height: 92px;
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.carousel-caption h2 {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.carousel-caption p {
+  width: 336px;
+  height: 31px;
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.carousel-caption p {
+  font-family: Lato;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.carousel-caption p {
+  font-family: "Myriad Pro - Regular";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.carousel-caption button {
+  width: 147px;
+  height: 37px;
+  border: 2px solid #ffffff;
+  background-color: inherit;
+  color: white;
+  display: block;
+}
+.rate {
+  position: absolute;
+  top: 23%;
+  left: 86%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  text-align: center;
+  font-weight:bold;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.season {
+  position: absolute;
+  top: 37%;
+  left: 86%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+  font-weight:bold;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.season span{
+  display: block;
 }
