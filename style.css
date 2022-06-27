@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 html{
   height: 100%;
+  
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  
+}
+body{
+  min-height: 100vh;
 }
 
 .logo{
@@ -15,7 +20,6 @@ html{
     display:inline-block;
     width:50px;
     top:8px;
-    float: inline-start;
 }
 .osf {
   width: 73px;
@@ -33,6 +37,7 @@ html{
   top:0px;
   font-weight: bold;
   padding: 10px;
+  margin-left: 55px;
 }
 /* Text style for "O, SF" */
 .o-sf {
@@ -57,6 +62,7 @@ html{
   padding: 20px;
   float: left;
   left: 35px;
+  margin-left: 15px;
 }
 /* Text style for "Academy" */
 .academy {
@@ -68,12 +74,10 @@ nav{
   position: fixed;
   z-index: 99;
   width: 100%;
-  
   background:#FFFFFF;
 }
 nav .wrapper{
   position: relative;
-  max-width: 1300px;
   padding: 0px 30px;
   height: 70px;
   line-height: 70px;
@@ -195,7 +199,9 @@ nav .wrapper{
   right: 30px;
   top: 10px;
 }
-
+.contact a{
+  text-decoration: none;
+}
 @media screen and (max-width: 970px) {
   .wrapper .btn{
     display: block;
@@ -337,8 +343,9 @@ nav input{
     height:max-content;
 }
 .logo img {
-    height: 45px;
-}
+  width:60px;
+  height: 50px;
+  }
 .footer {
   left: 0;
   bottom: 0;
@@ -349,8 +356,9 @@ nav input{
 }
 .slides{
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  width: 100vw;
+  grid-template-columns: 4fr 1fr;
+  width: 100vh;
+  padding-bottom: 40px;
 }
 .sales{
   display: grid;
@@ -362,7 +370,7 @@ nav input{
 }
 .lime{
   height: 350px;
-  width: 260px;
+  width: 100%;
 }
 .palm{
   align-content: center;
@@ -409,6 +417,9 @@ nav input{
   float: left;
   margin-bottom: 0;
 }
+.f h6{
+  text-decoration: none;
+}
 .follow {
   font-style:normal;
   letter-spacing: normal;
@@ -428,15 +439,29 @@ nav input{
   height: 350px;
   width: 700px;
 }
-
-.carousel-item {
+.carousel-inner{
   width: 1171px;
   height: 506px;
-  padding: 35px 75px;
+  margin-left: 0;
+}
+.carousel-inner img{
   object-fit: cover;
+  width: 870px;
+  height: 505px;
+}
+.carousel-indicators button{
+  margin-left: 0;
+}
+.carousel-item {
+  width: 774px;
+  height: 436px;
+  object-fit: cover;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
 }
 /*first slider*/
-.carousel-caption h2{
+#car1 h2{
   width: 559px;
   height: 92px;
   color: #ffffff;
@@ -449,13 +474,13 @@ nav input{
   text-align: left;
   margin-bottom: 40px;
 }
-.carousel-caption h2 {
+#car1 h2 {
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
 }
 
-.carousel-caption p {
+#car1 p {
   width: 336px;
   height: 31px;
   color: #ffffff;
@@ -469,15 +494,16 @@ nav input{
   margin-bottom: 40px;
 }
 
-.carousel-caption p {
+#car1 p {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
+  text-align: left;
 }
 
-.carousel-caption p {
+#car1 p {
   font-family: "Myriad Pro - Regular";
   font-weight: 400;
   font-style: normal;
@@ -485,18 +511,19 @@ nav input{
   line-height: normal;
 }
 
-.carousel-caption button {
+#car1 button {
   width: 147px;
   height: 37px;
   border: 2px solid #ffffff;
   background-color: inherit;
   color: white;
   display: block;
+  align-content: flex-start;
 }
 
 /*second slider*/
 
-.carousel-capt h2{
+#car2 h2{
   width: 559px;
   height: 92px;
   color: #ffffff;
@@ -509,13 +536,13 @@ nav input{
   text-align: center;
   margin-bottom: 40px;
 }
-.carousel-capt h2 {
+#car2 h2 {
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
 }
 
-.carousel-capt p {
+#car2 p {
   width: 336px;
   height: 31px;
   color: #ffffff;
@@ -529,7 +556,7 @@ nav input{
   margin-bottom: 40px;
 }
 
-.carousel-capt p {
+#car2 p {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
@@ -537,7 +564,7 @@ nav input{
   line-height: normal;
 }
 
-.carousel-capt p {
+#car2 p {
   font-family: "Myriad Pro - Regular";
   font-weight: 400;
   font-style: normal;
@@ -545,7 +572,7 @@ nav input{
   line-height: normal;
 }
 
-.carousel-capt button {
+#car2 button {
   width: 147px;
   height: 37px;
   border: 2px solid #ffffff;
@@ -555,7 +582,7 @@ nav input{
 }
 /*third slider*/
 
-.carousel-caption h2{
+#car3 h2{
   width: 559px;
   height: 92px;
   color: #ffffff;
@@ -568,13 +595,13 @@ nav input{
   text-align: left;
   margin-bottom: 40px;
 }
-.carousel-caption h2 {
+#car3 h2 {
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
 }
 
-.carousel-caption p {
+#car3 p {
   width: 336px;
   height: 31px;
   color: #ffffff;
@@ -588,7 +615,7 @@ nav input{
   margin-bottom: 40px;
 }
 
-.carousel-caption p {
+#car3 p {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
@@ -596,7 +623,7 @@ nav input{
   line-height: normal;
 }
 
-.carousel-caption p {
+#car3 p {
   font-family: "Myriad Pro - Regular";
   font-weight: 400;
   font-style: normal;
@@ -604,7 +631,7 @@ nav input{
   line-height: normal;
 }
 
-.carousel-caption button {
+#car3 button {
   width: 147px;
   height: 37px;
   border: 2px solid #ffffff;
@@ -615,24 +642,30 @@ nav input{
 .rate {
   position: absolute;
   top: 23%;
-  left: 86%;
+  left: 80%;
   transform: translate(-50%, -50%);
   font-size: 70px;
   text-align: center;
   font-weight:bold;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  align-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+
 }
 .season {
   position: absolute;
   top: 37%;
-  left: 86%;
+  left: 80%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   text-align: center;
   font-weight:bold;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .season span{
   display: block;
@@ -646,12 +679,20 @@ nav input{
   padding: 45px 25px 25px;
 }
 .load-more{
-  width: 262px;
-  display:block;
+  border-radius: 25px;
+  background-color: inherit;
+  color: white;
+  font-size: 12px;
+  width: 330px;
+  height: 30px;
+  border-color: #FFFFFF;
+  align-content: center;
+  margin-left: 565px;
 }
 .load-more span img{
   height: 17px;
   width: 17px;
+  color: white;
 }
 .hero-image{
  padding: 40px 0;
@@ -663,4 +704,276 @@ nav input{
 }
 .main-section{
   background-color: #2d343a;
+}
+
+#followus a{
+  text-decoration: none;
+}
+ /*popular items*/
+ .myCopy {
+  display: block;
+  height: 9px;
+  border-bottom: solid 1px #000;
+  text-align: center;
+}
+
+.myCopy span {
+  display: inline-block;
+  background-color: #2d343a;
+  padding: 0 10px;
+  color: white;
+  font-weight: bold;
+
+}
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .header {
+    margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+    font-size: 1rem;
+    color: #fe302f;
+    font-weight: 500;
+}
+
+.section-products .header h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444; 
+}
+
+.section-products .single-product {
+    margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+		transform: scale(1.2,1.2) rotate(5deg);
+}
+
+.section-products #product-1 .part-1::before {
+    background-image: url(/Photos/Layer_151.png) no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+    background: url(/Photos/Layer_152.png) no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-3 .part-1::before {
+    background: url("https://i.ibb.co/L8Nrb7p/1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-4 .part-1::before {
+    background: url("https://i.ibb.co/cLnZjnS/2.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffffff;
+    background-color: #fe302f;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+    color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 h4 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+    position: relative;
+    padding: 0 7px;
+    margin-right: 2px;
+    opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #444444;
+    transform: translateY(-50%);
+}
+/*end of popular items*/
+/* Style for "Featured P" */
+.featured-products-unde {
+  width: 334px;
+  height: 66px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  display: inline;
+}
+/* Text style for "Featured P" */
+.featured-products {
+  font-family: "arial, Helvetica, sans-serif - Extra Bold";
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+/* Text style for "Unde omnis" */
+.unde-omnis-iste {
+  font-family: "arial, Helvetica, sans-serif - Regular";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 36px;
+}
+.cell{
+  width: 27%;
+  height: 300px;
+  margin: 15px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.cell img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.first-wrapper {
+  display: flex;
+  width: 100%;
+  height: 198px;
+  background-color: #45413e;
+  padding-inline: 20px;
+  padding-block: 30px;
+  align-items: center;
+}
+.items {
+  display: flex;
+  margin-inline: 10px;
+  margin-block: 8px;
+  align-items: center;
+  width: 33.33%;
+}
+.text {
+  width: 80%;
+  padding-inline: 5px;
+  margin-left: 5%;
+  color: white;
+}
+.text p{
+  color: #868380;
+  font-size: 12px;
+}
+.text h2{
+  font-size: 15px;
+  font-weight: bold;
+}
+img {
+  width: 20%;
+}
+
+/* Simple : Mobile */
+@media only screen and (max-width: 600px) {
+  .first-wrapper,
+  .items {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .items {
+    width: 90%;
+  }
+  .items .text {
+    width: 100%;
+    margin-left: 0;
+  }
+  .items img {
+    width: 59px;
+    height: 67px;
+    background-color: inherit;
+  }
 }
