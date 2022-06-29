@@ -9,6 +9,16 @@ html{
   box-sizing: border-box;
   font-family: 'Lato','Poppins', sans-serif;
 }
+.osfColor {
+  color: #84bc22;
+}
+.loginButton {
+  background-color: #84bc22 !important;
+  border-radius: 28px !important;
+}
+.eye{
+  position: absolute;
+}
 body{
   min-height: 100vh;
 }
@@ -691,13 +701,13 @@ nav input{
   color: white;
   font-size: 12px;
   width: 330px;
-  height: 30px;
+  height: 25px;
   border-color: #FFFFFF;
   align-content: center;
   margin-left: 550px;
 }
 .load-more span img{
-  height: 17px;
+  height: 15px;
   width: 17px;
   color: white;
   display: inline-block;

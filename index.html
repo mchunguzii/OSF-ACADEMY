@@ -447,26 +447,36 @@
   </div>
 </div>
 <div class="modal " id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered  modal-lg">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="container">
-        <div class="popup">
-            <h1 class="signin">Sign in</h1>
+        <div class="popup text-center">
+          <h1 class="signin py-5">Sign in</h1>
         </div>
-        <div class="email">
-            <h5>Email</h5>
-            <input type="text" class="mail">
+        <div class="mb-3 mx-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
-        <div class="lato">
-            <h5>Lato <span><a href="#">forgot password</a></span></h5>
-            <input type="text" class="lato">
-            <i class="fa-thin fa-eye"></i>
+        <div class="mb-3 mx-3">
+          <label for="exampleFormControlInput1" class="form-label">Password</label>
+          <div class="input-group mb-3">
+            <input class="form-control border-end-0" id="password" name="password" placeholder="********" value="">
+            <span class="input-group-text border-start-0" style="background-color: #fff;">
+              <i class="fa fa-eye" id="togglePassword" style="cursor: pointer"></i>
+            </span>
+          </div>
         </div>
-        <input type="submit" value="Login">
-       <div class="donthave">
-        <a href="#">I don't have an account</a>
-       </div>
+        <div class="text-center mb-3">
+          <button type="submit" class="btn btn-primary mb-3 loginButton border-0 text-uppercase px-5">login</button>
+        </div>
+        <div class="text-center mb-3">
+          <a href="#" class="text-decoration-none"><span class="osfColor">I do not have an account</span></a>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+    </section>
     </div>
   </div>
 </div>
@@ -488,6 +498,18 @@
   var yearSpan = $("#year");
   var year = new Date().getFullYear();
   yearSpan.text(year);
+  const togglePassword = document.querySelector("#togglePassword");
+  const password = document.querySelector("#password");
+
+  togglePassword.addEventListener("click", function () {
+
+    // toggle the type attribute
+    const type = password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+    // toggle the eye icon
+    this.classList.toggle('fa-eye');
+    this.classList.toggle('fa-eye-slash');
+  });
 </script>
 <script src="index.js"></script>
 
