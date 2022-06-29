@@ -9,6 +9,9 @@ html{
   box-sizing: border-box;
   font-family: 'Lato','Poppins', sans-serif;
 }
+.dropdown-item a{
+  height: 15px;
+}
 .osfColor {
   color: #84bc22;
 }
@@ -21,6 +24,8 @@ html{
 }
 body{
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo{
@@ -367,6 +372,7 @@ nav input{
   font-size: 12px;
   min-height: 10vh;
   margin-left: 25px;
+  margin-top: auto;
 }
 .slides{
   display: grid;
@@ -1128,6 +1134,3 @@ img {
     background-color: inherit;
   }
 }
-/*currency*/
-
-/*currency*/
