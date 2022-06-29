@@ -13,6 +13,22 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./Cookies/cookies.css">
+    <style>
+        #gallery{
+  column-count:4;
+  column-gap:20px;
+  padding-top: 110px;
+}
+    
+#gallery img {
+  width:100%;
+  height:auto;
+  margin: 4% auto;
+  box-shadow:-3px 5px 15px #000;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+    </style>
 <title>OSF Digital</title>
 </head>
 <body class="container">
@@ -118,6 +134,19 @@
     </div>
     </div>
   </nav>
+  <!--library-->
+  <div id="gallery" class="container-fluid">
+    <h1>OSF DIGITAL AROUND THE WORLD</h1>
+    <P>As a global multicultural company with over 2,000 employees, OSF Digital is dedicated to maintaining harmonious relationships between its employees, partners, and clients. Since the company’s founding in 2003, OSF's culture and business approach were shaped by five values that, having penetrated every layer of our organization, determined the way we interact inside the company and formed a shared mindset that now powers everything we do. Being driven by these principles, we’ve been able to evolve throughout the years and become a trusted digital transformation company, and a reliable partner and system integrator.</P>
+    <img src="/Photos/1.jpg" class="img-responsive">
+    <img src="/Photos/2.jpg" class="img-responsive">
+     <img src="/Photos/3.jpg" class="img-responsive">
+    <img src="/Photos/4.jpg" class="img-responsive">
+    <img src="/Photos/5.jpg" class="img-responsive">
+  <img src="/Photos/6.jpg" class="img-responsive">
+    <img src="/Photos/7.jpg" class="card img-responsive">
+  </div>
+  <!--library-->
   <div class="footer">
  <div class="container-fluid mt-3">
   <div class="row">
@@ -290,6 +319,25 @@
   freeScroll: true,
   autoPlay:true,
 });
+</script>
+<script>
+    @media (max-width:1200px){
+  #gallery{
+  column-count:3;
+  column-gap:20px;
+}
+}
+@media (max-width:800px){
+  #gallery{
+  column-count:2;
+  column-gap:20px;
+}
+}
+@media (max-width:600px){
+  #gallery{
+  column-count:1;
+}
+}
 </script>
 </body>
 </html>
