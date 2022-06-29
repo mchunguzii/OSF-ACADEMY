@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 html{
   height: 100%;
-  
+  min-width: 100vw;
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato','Poppins', sans-serif;
 }
 body{
   min-height: 100vh;
@@ -35,7 +35,7 @@ body{
   position:absolute;
   top:0px;
   font-weight: bold;
-  padding: 10px;
+  padding: 0 7px;
   margin-left: 55px;
 }
 /* Text style for "O, SF" */
@@ -49,7 +49,7 @@ body{
   width: 74px;
   height: 17px;
   color: #84bc22;
-  font-family: Lato;
+  font-family:'Lato','Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -58,7 +58,7 @@ body{
   text-align: left;
   position:absolute;
   top: 20px;
-  padding: 20px;
+  padding: 10px;
   float: left;
   left: 35px;
   margin-left: 15px;
@@ -93,6 +93,11 @@ nav .wrapper{
 }
 .wrapper .nav-links{
   display: inline-flex;
+}
+.icon-bars a img{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
 }
 .nav-links li{
   list-style: none;
@@ -360,22 +365,26 @@ nav input{
   padding-bottom: 40px;
 }
 .sales{
-  display: grid;
+  display: block;
   grid-template-rows: 3fr 2fr;
   padding-top: 0px;
-  height: 350px;
+  height: 171px;
   padding: 0 25px;
-  width: 10vw;
+  width: 350px;
+}
+.sales h1{
+  display: block;
 }
 .lime{
   height: 350px;
   width: 100%;
+  display: block;
 }
 .palm{
   align-content: center;
 }
 .faceb{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato','Poppins', sans-serif;
   font-size: 16px;
   text-align: center;
   padding-top: 20px;
@@ -397,7 +406,7 @@ nav input{
   background-color: #ffffff;
   border-radius: 25px;
   color: #3a5b96;
-  font-family: Lato;
+  font-family: 'Lato','Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -423,7 +432,7 @@ nav input{
   font-style:normal;
   letter-spacing: normal;
   text-decoration:none;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: 'lato',Arial, Helvetica, sans-serif;
 }
 .view-more{
   border-radius: 25px;
@@ -464,7 +473,7 @@ nav input{
   width: 559px;
   height: 92px;
   color: #ffffff;
-  font-family: "Myriad Pro";
+  font-family: 'Lato','Poppins', sans-serif;;
   font-size: 48px;
   font-weight: 700;
   font-style: normal;
@@ -483,7 +492,7 @@ nav input{
   width: 336px;
   height: 31px;
   color: #ffffff;
-  font-family: "Myriad Pro";
+  font-family: 'Lato','Poppins', sans-serif;;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -494,7 +503,7 @@ nav input{
 }
 
 #car1 p {
-  font-family: Lato;
+  font-family:'Lato','Poppins', sans-serif;;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -503,7 +512,7 @@ nav input{
 }
 
 #car1 p {
-  font-family: "Myriad Pro - Regular";
+  font-family:'Lato','Poppins', sans-serif;;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -526,7 +535,7 @@ nav input{
   width: 559px;
   height: 92px;
   color: #ffffff;
-  font-family: "Myriad Pro";
+  font-family: 'Lato','Poppins', sans-serif;
   font-size: 48px;
   font-weight: 700;
   font-style: normal;
@@ -545,7 +554,7 @@ nav input{
   width: 336px;
   height: 31px;
   color: #ffffff;
-  font-family: "Myriad Pro";
+  font-family: 'Lato','Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -556,7 +565,7 @@ nav input{
 }
 
 #car2 p {
-  font-family: Lato;
+  font-family: 'Lato','Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -564,7 +573,7 @@ nav input{
 }
 
 #car2 p {
-  font-family: "Myriad Pro - Regular";
+  font-family: 'Lato','Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -585,7 +594,7 @@ nav input{
   width: 559px;
   height: 92px;
   color: #ffffff;
-  font-family: "Myriad Pro";
+  font-family: 'Lato','Poppins', sans-serif;
   font-size: 48px;
   font-weight: 700;
   font-style: normal;
@@ -604,7 +613,7 @@ nav input{
   width: 336px;
   height: 31px;
   color: #ffffff;
-  font-family: "Myriad Pro";
+  font-family: 'Lato','Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -615,7 +624,7 @@ nav input{
 }
 
 #car3 p {
-  font-family: Lato;
+  font-family: 'Lato','Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -623,7 +632,7 @@ nav input{
 }
 
 #car3 p {
-  font-family: "Myriad Pro - Regular";
+  font-family: 'Lato','Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -647,11 +656,10 @@ nav input{
   text-align: center;
   font-weight:bold;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato','Poppins', sans-serif;
   align-content: center;
   white-space: nowrap;
   overflow: hidden;
-
 }
 .season {
   position: absolute;
@@ -662,7 +670,7 @@ nav input{
   text-align: center;
   font-weight:bold;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato','Poppins', sans-serif;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -674,7 +682,7 @@ nav input{
 }
 .header h2{
   color: white;
-  font-family: "Lato - Extra Bold";
+  font-family: 'Lato','Poppins', sans-serif;
   padding: 45px 25px 25px;
 }
 .load-more{
@@ -686,12 +694,13 @@ nav input{
   height: 30px;
   border-color: #FFFFFF;
   align-content: center;
-  margin-left: 565px;
+  margin-left: 550px;
 }
 .load-more span img{
   height: 17px;
   width: 17px;
   color: white;
+  display: inline-block;
 }
 .hero-image{
  padding: 40px 0;
@@ -747,7 +756,7 @@ h1 span {
     box-sizing: border-box;
 }
 body{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Lato','Poppins', sans-serif;
 }
 
 /* Utility stylings */
@@ -762,7 +771,7 @@ img{
 .lg-title,
 .md-title,
 .sm-title{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato','Poppins', sans-serif;
     padding: 0.6rem 0;
     text-transform: capitalize;
 }
@@ -775,7 +784,7 @@ img{
 }
 .md-title{
     font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato','Poppins', sans-serif;
 }
 .sm-title{
     font-weight: 300;
@@ -839,7 +848,7 @@ img{
     border: 1px solid black;
     padding: 0.8rem 0;
     width: 125px;
-    font-family: inherit;
+    font-family: 'Lato','Poppins', sans-serif;
     text-transform: uppercase;
     cursor: pointer;
     border: none;
@@ -972,12 +981,6 @@ img{
     background: var(--carribean-green);
 }
 
-
-
-
-
-
-
 /* Media Queries */
 @media screen and (min-width: 992px){
     .product-items{
@@ -1023,7 +1026,7 @@ img{
   width: 334px;
   height: 66px;
   color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato','Poppins', sans-serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -1034,7 +1037,7 @@ img{
 }
 /* Text style for "Featured P" */
 .featured-products {
-  font-family: "arial, Helvetica, sans-serif - Extra Bold";
+  font-family: "lato,arial, Helvetica, sans-serif - Extra Bold";
   font-size: 36px;
   font-weight: 700;
   font-style: normal;
@@ -1043,7 +1046,7 @@ img{
 }
 /* Text style for "Unde omnis" */
 .unde-omnis-iste {
-  font-family: "arial, Helvetica, sans-serif - Regular";
+  font-family: "lato,arial, Helvetica, sans-serif - Regular";
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -1115,3 +1118,6 @@ img {
     background-color: inherit;
   }
 }
+/*currency*/
+
+/*currency*/

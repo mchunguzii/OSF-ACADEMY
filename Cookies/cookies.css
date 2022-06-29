@@ -1,0 +1,57 @@
+@media screen and (min-width: 480px) {
+    .cookie {
+        float: left;
+    }
+}
+/* *{
+    margin: 20px 50px;
+    padding: 20px;
+    box-sizing:border-box;
+} */
+.cookie{
+    transition: 400ms;
+}
+
+.cookiee{
+    font-size: 14px;
+    font-family: 'lato',Arial, Helvetica, sans-serif;
+    padding: 20px;
+    color: #84bc22;
+}
+.cookiee span{
+    display: inline;
+    float: right;
+    size: 20px;
+    color: black;
+}
+.cookiee span a{
+    color: black;
+    size: 20px;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0px;
+}
+.cookie p{
+    padding: 0 20px;
+    font-size: 12px;
+    font-family:  'lato' , Helvetica, sans-serif;
+    color: #45413e;
+    line-height: 1.5;
+}
+.cookie a{
+    color: #84bc22;
+    text-decoration: none;
+}
+.cookie.btn{
+    background-color: #84bc22;
+    border: 0;
+    color: white;
+    padding: 5px 28px;
+    font-family: 'lato' Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 16px;
+    border-radius: 18px;
+    cursor: pointer;
+    display: inline;
+    float: right;
+}

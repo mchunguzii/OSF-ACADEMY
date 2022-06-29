@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./Cookies/cookies.css">
 <title>OSF Digital</title>
 </head>
 <body class="container">
@@ -85,7 +89,19 @@
          <li><a href="#">CONTACT US</a></li>
         </li>
       </ul>
+      <!--currency-->
+      
+      <!--currency end-->
+         <!--ICONS START-->
+         <div class="icon-bars">
+           <a class="mx-md-3" href="#"><img src="photos/Search_Information._Attribute_as_Designmodo_from_Flaticon.com.png" alt="osf digital" width="10px" height="10px"></a>
+           <a id="login" class="mx-md-3" href="#"><img src="photos/Profile_User_Outline._Attribute_as_Situ_Herrera_from_Flaticon.com.png" alt="osf digital" width="10px" height="10px"></a>
+           <a class="mx-md-3" href="#"><img src="photos/Heart_Outline_Rounded_Shape._Attribute_as_Freepik_from_Flaticon.com.png" alt="osf digital" width="10px" height="10px"></a>
+           <a class="mx-md-3" href="#"><img src="photos/Bag_For_Shopping._Attribute_as_SimpleIcon_from_Flaticon.com.png" alt="osf digital" width="10px" height="10px"></a>
+        </div>
+    <!--ICONS END-->
       <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
     </div>
   </nav>
   <div class="container">
@@ -123,11 +139,9 @@
           </div>
         </div>
       </div>
-      <div class='sales container'> 
-        <img src="Photos/lime green.png" alt="sales" class="lime container">
-        <h1 class="rate container">55%</h1>
-        <h6 class="season container">SUMMER <span>SALES</span></h6>
-        <div class="palm container">
+      <div class="sales"> 
+        <img src="Photos/lime green.png" alt="sales" class="lime">
+        <div class="palm ">
           <h1 class="faceb">Follow us on Facebook</h1>
           <h3 class="faceB"> Sed  ut perspiciatis unde omnis iste <span class="line-2">natus error sit</span></h3>
           <button type="button" class="back"><img src="photos/f.png" alt="facebook" class="f"><h6 id="followus"><a href="https://www.facebook.com/OSFDigital/">FOLLOW</a></h6></button>
@@ -135,7 +149,7 @@
       </div>
   </div>
   </div>
-<main class="main-section">
+  <main class="main-section">
   <section class="section-products">
     <div class="container">
       <div class="row justify-content-center text-center">
@@ -279,13 +293,11 @@
             <p class = "product-price">$ 150.00</p>
         </div>
 
-    <!-- end of single product -->
-</div>
-</div>
-</div>
-
-</body>
-</html>
+     <!-- end of single product -->
+    </div>
+        </div>
+    </div>
+  </html>
 
   <!--popular products end-->
   <button type="button" class="load-more" > LOAD MORE <span><img src="photos/U.png" alt="osf"></span></button>
@@ -307,8 +319,8 @@
     <div class="cell"><img src="/Photos/Layer_160.png" alt="osf digital images"></div>
     <div class="cell"><img src="/Photos/Layer_161.png" alt="osf digital images"></div>
   </div>
-</main>
-<div class="first-wrapper">
+  </main>
+  <div class="first-wrapper">
   <div class="items">
     <img src="Photos/Delivery_Packages_On_A_Trolley._Attribute_as_Freepik_from_Flaticon.com.png" width="59" height="67" />
     <div class="text">
@@ -407,17 +419,78 @@
   </div>
  </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><script>
+
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal " id="cookiesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered  modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="cookie">
+          <h3 class="cookiee">
+              This website uses cookies <span><a href="">X</a></span>
+          </h3>
+          <p>
+              OSF uses its own and third-party cookies for statistical purposes, to know your preferences, for website perfomance and interaction with social media offering publicity tailored to your interests.If you continue browsing, we consider that you accept its use.
+              You can expand this information consulting our <a href="#">Cookies Policy Page.</a> <span><button class="cookie btn">ACCEPT</button></span>
+               
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal " id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered  modal-lg">
+    <div class="modal-content">
+      <div class="container">
+        <div class="popup">
+            <h1 class="signin">Sign in</h1>
+        </div>
+        <div class="email">
+            <h5>Email</h5>
+            <input type="text" class="mail">
+        </div>
+        <div class="lato">
+            <h5>Lato <span><a href="#">forgot password</a></span></h5>
+            <input type="text" class="lato">
+            <i class="fa-thin fa-eye"></i>
+        </div>
+        <input type="submit" value="Login">
+       <div class="donthave">
+        <a href="#">I don't have an account</a>
+       </div>
+    </div>
+    </div>
+  </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+     /*  $(window).on('load', function() {
+        $('#cookiesModal').modal('show');
+    });
+ */
+    $("#login").click(function(){
+      $('#loginModal').modal('show');
+    })
+
   var yearSpan = $("#year");
   var year = new Date().getFullYear();
   yearSpan.text(year);
 </script>
 <script src="index.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 <script type="text/javascript">
   $('.main-carousel').flickity({
   cellAlign: 'left',
