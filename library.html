@@ -7,12 +7,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/Photos/osf.png">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./Cookies/cookies.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         #gallery{
   column-count:4;
@@ -34,106 +34,115 @@
 <body class="container">
   <nav class="container">
     <div class="wrapper">
-      <div class="logo"><a href="/"><img src="photos/osf.png" alt="osf logo"><span class="osf">OSF</span>
-        <span class="academy">Academy</span></div></a>
-      <input type="radio" name="slider" id="menu-btn">
-      <input type="radio" name="slider" id="close-btn">
-      <ul class="nav-links">
-        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-        <li>
-          <a href="/" class="desktop-item">SERVICES</a>
-          <input type="checkbox" id="showMega">
-          <label for="showMega" class="mobile-item">SERVICES</label>
-          <div class="mega-box">
-            <div class="content">
-              <div class="row">
-                <header>PRODUCT CATEGORIES</header>
-                <ul class="mega-links">
-                  <li><a href="/404.html">Accessories</a></li>
-                  <li><a href="/404.html">Alcohol</a></li>
-                  <li><a href="/404.html">Art</a></li>
-                  <li><a href="/404.html">Books</a></li>
-                  <li><a href="/404.html">Drink</a></li>
-                  <li><a href="/404.html">Electronics</a></li>
-                  <li><a href="/404.html">Flowers & Plants</a></li>
-                  <li><a href="/404.html">Food</a></li>
+        <div class="logo"><a href="/"><img src="photos/osf.png" alt="osf logo"><span class="osf">OSF</span>
+            <span class="academy">Academy</span></div></a>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li>
+                <a href="/" class="desktop-item">SERVICES</a>
+                <input type="checkbox" id="showMega">
+                <label for="showMega" class="mobile-item">SERVICES</label>
+                <div class="mega-box">
+                    <div class="content">
+                    <div class="row">
+                        <header>PRODUCT CATEGORIES</header>
+                        <ul class="mega-links">
+                        <li><a href="/404.html">Accessories</a></li>
+                        <li><a href="/404.html">Alcohol</a></li>
+                        <li><a href="/404.html">Art</a></li>
+                        <li><a href="/404.html">Books</a></li>
+                        <li><a href="/404.html">Drink</a></li>
+                        <li><a href="/404.html">Electronics</a></li>
+                        <li><a href="/404.html">Flowers & Plants</a></li>
+                        <li><a href="/404.html">Food</a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul class="mega-links">
+                            <li><a href="/404.html">Gadgets</a></li>
+                            <li><a href="/404.html">Garden</a></li>
+                            <li><a href="/404.html">Grocery</a></li>
+                            <li><a href="/404.html">Home</a></li>
+                            <li><a href="/404.html">Jewelry</a></li>
+                            <li><a href="/404.html">Kids & Baby</a></li>
+                            <li><a href="/404.html">Men's Fashion</a></li>
+                            <li><a href="/404.html">Mobile</a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul class="mega-links">
+                            <li><a href="/404.html">Motorcycles</a></li>
+                            <li><a href="/404.html">Movies</a></li>
+                            <li><a href="/404.html">Music</a></li>
+                            <li><a href="/404.html">Office</a></li>
+                            <li><a href="/404.html">Pets</a></li>
+                            <li><a href="/404.html">Romantic</a></li>
+                            <li><a href="/404.html">Sport</a></li>
+                            <li><a href="/404.html">Toys</a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <header>SALE</header>
+                        <ul class="mega-links">
+                        <li><a href="/404.html">Accessories</a></li>
+                        <li><a href="/404.html">Alcohol</a></li>
+                        <li><a href="/404.html">Art</a></li>
+                        <li><a href="/404.html">Books</a></li>
+                        <li><a href="/404.html">Drink</a></li>
+                        <li><a href="/404.html">Electronics</a></li>
+                        <li><a href="/404.html">Flowers & Plants</a></li>
+                        <li><a href="/404.html">Food</a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <img src="Photos/23.jpg" alt="osf digital" class="osf1">
+                    </div>
+                    </div>
+                </div>
+                <li><a href="/company.html">COMPANY</a></li>
+                <li><a href="/library.html">LIBRARY</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                </li>
+                <a class="nav-link dropdown-toggle mx-3" style="color:#45413e;font-size: 12px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item my-1" href="#">TUR</a></li>
+                <li><a class="dropdown-item my-1" href="#">FR</a></li>
+                <li><a class="dropdown-item my-1" href="#">ITA</a></li>
+                <li><a class="dropdown-item my-1" href="#">JPN</a></li>
+                <li><a class="dropdown-item my-1" href="#">SWA</a></li>
                 </ul>
-              </div>
-              <div class="row">
-                <ul class="mega-links">
-                    <li><a href="/404.html">Gadgets</a></li>
-                    <li><a href="/404.html">Garden</a></li>
-                    <li><a href="/404.html">Grocery</a></li>
-                    <li><a href="/404.html">Home</a></li>
-                    <li><a href="/404.html">Jewelry</a></li>
-                    <li><a href="/404.html">Kids & Baby</a></li>
-                    <li><a href="/404.html">Men's Fashion</a></li>
-                    <li><a href="/404.html">Mobile</a></li>
+                <div><a class="nav-link dropdown-toggle" style="color:#45413e;font-size: 12px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">$US</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item my-1" href="#">₺Tr</a></li>
+                    <li><a class="dropdown-item my-1" href="#">د.إAed</a></li>
+                    <li><a class="dropdown-item my-1" href="#">$Cad</a></li>
+                    <li><a class="dropdown-item my-1" href="#">¥Jpn</a></li>
+                    <li><a class="dropdown-item my-1" href="#">Tshs</a></li>
                 </ul>
-              </div>
-              <div class="row">
-                <ul class="mega-links">
-                    <li><a href="/404.html">Motorcycles</a></li>
-                    <li><a href="/404.html">Movies</a></li>
-                    <li><a href="/404.html">Music</a></li>
-                    <li><a href="/404.html">Office</a></li>
-                    <li><a href="/404.html">Pets</a></li>
-                    <li><a href="/404.html">Romantic</a></li>
-                    <li><a href="/404.html">Sport</a></li>
-                    <li><a href="/404.html">Toys</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>SALE</header>
-                <ul class="mega-links">
-                  <li><a href="/404.html">Accessories</a></li>
-                  <li><a href="/404.html">Alcohol</a></li>
-                  <li><a href="/404.html">Art</a></li>
-                  <li><a href="/404.html">Books</a></li>
-                  <li><a href="/404.html">Drink</a></li>
-                  <li><a href="/404.html">Electronics</a></li>
-                  <li><a href="/404.html">Flowers & Plants</a></li>
-                  <li><a href="/404.html">Food</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <img src="Photos/23.jpg" alt="osf digital" class="osf1">
-              </div>
+                </div>
+            </ul>
+            <!--ICONS START-->
+            <div class="icon-bars">
+            <a class="mx-md-3" href="#"><img src="photos/Search_Information._Attribute_as_Designmodo_from_Flaticon.com.png" alt="osf digital" width="10px" height="10px"></a>
+            <a id="login" class="mx-md-3" href="#"><img src="photos/Profile_User_Outline._Attribute_as_Situ_Herrera_from_Flaticon.com.png" alt="osf digital" width="10px" height="10px"></a>
+            <a class="mx-md-3" href="#"><img src="photos/Heart_Outline_Rounded_Shape._Attribute_as_Freepik_from_Flaticon.com.png" alt="osf digital" width="10px" height="10px"></a>
+            <a class="mx-md-3" href="#"><img src="photos/Bag_For_Shopping._Attribute_as_SimpleIcon_from_Flaticon.com.png" alt="osf digital" width="10px" height="10px"></a>
             </div>
-          </div>
-          <li><a href="#">COMPANY</a></li>
-        <li><a href="#">LIBRARY</a></li>
-         <li><a href="#">CONTACT US</a></li>
-        </li>
-        <a class="nav-link dropdown-toggle mx-3" style="color:#45413e;font-size: 12px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item my-1" href="#">TUR</a></li>
-          <li><a class="dropdown-item my-1" href="#">FR</a></li>
-          <li><a class="dropdown-item my-1" href="#">ITA</a></li>
-          <li><a class="dropdown-item my-1" href="#">JPN</a></li>
-          <li><a class="dropdown-item my-1" href="#">SWA</a></li>
-        </ul>
-        <div><a class="nav-link dropdown-toggle" style="color:#45413e;font-size: 12px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">$US</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item my-1" href="#">₺Tr</a></li>
-            <li><a class="dropdown-item my-1" href="#">د.إAed</a></li>
-            <li><a class="dropdown-item my-1" href="#">$Cad</a></li>
-            <li><a class="dropdown-item my-1" href="#">¥Jpn</a></li>
-            <li><a class="dropdown-item my-1" href="#">Tshs</a></li>
-        </ul></div>
-      </ul>
-         <!--ICONS START-->
-         <div class="icon-bars">
-           <a class="mx-md-3" href="#"><img src="photos/Search_Information._Attribute_as_Designmodo_from_Flaticon.com.png" alt="osf digital" width="10px" height="10px"></a>
-           <a id="login" class="mx-md-3" href="#"><img src="photos/Profile_User_Outline._Attribute_as_Situ_Herrera_from_Flaticon.com.png" alt="osf digital" width="10px" height="10px"></a>
-           <a class="mx-md-3" href="#"><img src="photos/Heart_Outline_Rounded_Shape._Attribute_as_Freepik_from_Flaticon.com.png" alt="osf digital" width="10px" height="10px"></a>
-           <a class="mx-md-3" href="#"><img src="photos/Bag_For_Shopping._Attribute_as_SimpleIcon_from_Flaticon.com.png" alt="osf digital" width="10px" height="10px"></a>
+            <!--ICONS END-->
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
-    <!--ICONS END-->
-      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-    </div>
     </div>
   </nav>
+
+  <!--breadcrumb-->
+  <div class="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item text-decoration-none"><a href="/index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+  </div>
   <!--library-->
   <div id="gallery" class="container-fluid">
     <h1>OSF DIGITAL AROUND THE WORLD</h1>
@@ -319,25 +328,6 @@
   freeScroll: true,
   autoPlay:true,
 });
-</script>
-<script>
-    @media (max-width:1200px){
-  #gallery{
-  column-count:3;
-  column-gap:20px;
-}
-}
-@media (max-width:800px){
-  #gallery{
-  column-count:2;
-  column-gap:20px;
-}
-}
-@media (max-width:600px){
-  #gallery{
-  column-count:1;
-}
-}
 </script>
 </body>
 </html>

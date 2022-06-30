@@ -1164,3 +1164,17 @@ img {
   color: red;
   align-items:center ;
 }
+.breadcrumb {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  margin-left: 30px;
+  text-decoration: none;
+}
+.breadcrumb a{
+  text-decoration: none;
+}
+
+/*product detail*/
